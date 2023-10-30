@@ -1,0 +1,13 @@
+<button
+  [ngClass]="buttonClass"
+  [ngStyle]="{ 'background-color': buttonColor }"
+  (click)="handleClick()"
+>
+  <app-icon
+    *ngIf="iconClass"
+    [iconClass]="iconClass"
+    [size]="iconSize"
+    [color]="iconColor"
+  ></app-icon>
+  {{ buttonText }}
+</button>
